@@ -1,8 +1,6 @@
 import time
 
 import tkinter as Tk
-from tkinter import ttk
-from tkinter import messagebox
 from PIL import Image
 from PIL import ImageTk
 import cv2
