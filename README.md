@@ -52,3 +52,7 @@ pip install pillow
 
 Anyone interested can use this tiny tool under the MIT license. I don't know how this relates to the mediapipe package license.
 I wish you fruitful work and interesting projects.
+
+### Unimportant matters
+
+For clarity, the code in face.py file does not meet the PEP-8 recommendation for line length.

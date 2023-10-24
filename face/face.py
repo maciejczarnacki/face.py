@@ -1,6 +1,7 @@
 # Faceanalyzer class has to initialize mediapipe face landmark detection tool 
 # in result class has to return coordinates of all face features - eyes, irises, eyebrows and lips
 # additional methods of this class could analyze if eyes and lips are open or close
+# for clarity, the code does not meet the PEP-8 recommendation for line length. 
 
 import itertools
 import mediapipe as mp
