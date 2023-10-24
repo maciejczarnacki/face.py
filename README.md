@@ -27,7 +27,7 @@ sound that the driver has his eyes closed.
 To demonstrate how face.py works, I created a small window application app.py.
 You need a webcam for testing. This app shows all the current capabilities of Face.py packages.
 
-### Dependences
+### Dependencies
 
 To use face.py, you need to install the [mediapipe](https://github.com/google/mediapipe/tree/master) package and its dependencies.
 The easiest way is to install it using pip from the Windows console.
