@@ -55,4 +55,4 @@ I wish you fruitful work and interesting projects.
 
 ### Unimportant matters
 
-For clarity, the code in face.py file does not meet the PEP-8 recommendation for line length.
+For clarity, the code in face.py file does not meet the PEP 8 recommendation for line length.
