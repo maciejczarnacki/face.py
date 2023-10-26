@@ -9,7 +9,8 @@ from face.face import Faceanalyzer
 
 # window definition
 root = Tk.Tk()
-root.geometry("650x600")
+root.geometry("650x550")
+root.resizable(width=False, height=False)
 root.wm_title("face.py package test")
 
 # starting black image
@@ -17,13 +18,19 @@ first = Image.new("RGB", (640, 480), (0, 0, 0,))
 imgtk = ImageTk.PhotoImage(image=first)
 
 # camera control
-camera = cv2.VideoCapture(0 + cv2.CAP_DSHOW)  # opencv camera inicialisation
-camera.set(cv2.CAP_PROP_BRIGHTNESS, 100) #set brightness
-camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640) # set width
-camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480) # set height
+# opencv camera inicialisation
+camera = cv2.VideoCapture(0 + cv2.CAP_DSHOW)
+#set brightness
+camera.set(cv2.CAP_PROP_BRIGHTNESS, 100) 
+# set width
+camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640) 
+# set height
+camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
+## time zero for fps counter
 pTime = 0
 
+# Faceanalyzare class instantiation
 face = Faceanalyzer()
 
 # function executed in a loop                   
