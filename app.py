@@ -4,7 +4,6 @@ import tkinter as Tk
 from PIL import Image
 from PIL import ImageTk
 import cv2
-import numpy as np
 
 from face.face import Faceanalyzer
 
@@ -14,12 +13,11 @@ root.geometry("650x600")
 root.wm_title("face.py package test")
 
 # starting black image
-first = np.full((480,640), 0)
-first_ = Image.fromarray(first)
-imgtk = ImageTk.PhotoImage(image=first_)
+first = Image.new("RGB", (640, 480), (0, 0, 0,))
+imgtk = ImageTk.PhotoImage(image=first)
 
 # camera control
-camera = cv2.VideoCapture(1 + cv2.CAP_DSHOW)  # opencv camera inicialisation
+camera = cv2.VideoCapture(0 + cv2.CAP_DSHOW)  # opencv camera inicialisation
 camera.set(cv2.CAP_PROP_BRIGHTNESS, 100) #set brightness
 camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640) # set width
 camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480) # set height
