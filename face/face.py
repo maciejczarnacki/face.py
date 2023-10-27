@@ -7,7 +7,7 @@ import itertools
 import mediapipe as mp
 
 
-class Faceanalyzer:
+class FaceAnalyzer:
     #mediapipe features initialization
     def __init__(self, max_num_faces = 3, static_image_mode = False, refine_landmarks = True):
         # face landmark detection settings   

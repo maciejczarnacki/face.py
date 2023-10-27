@@ -5,7 +5,7 @@ from PIL import Image
 from PIL import ImageTk
 import cv2
 
-from face.face import Faceanalyzer
+from face import FaceAnalyzer
 
 # window definition
 root = Tk.Tk()
@@ -31,7 +31,7 @@ camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 pTime = 0
 
 # Faceanalyzare class instantiation
-face = Faceanalyzer()
+face = FaceAnalyzer()
 
 # function executed in a loop                   
 def getface():
